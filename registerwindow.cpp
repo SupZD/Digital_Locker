@@ -5,6 +5,7 @@
 #include <QMessageBox>
 #include <QLineEdit>
 #include <QPushButton>
+#include <QComboBox>
 
 RegisterWindow::RegisterWindow(QWidget *parent)
     : QDialog(parent)
@@ -13,6 +14,12 @@ RegisterWindow::RegisterWindow(QWidget *parent)
     ui->setupUi(this);
 
     setWindowTitle("Create Account");
+
+    ui->securityQuestionCombo->addItem("What is your pet's name?");
+    ui->securityQuestionCombo->addItem("What is your mother's maiden name?");
+    ui->securityQuestionCombo->addItem("What was the name of your first school?");
+    ui->securityQuestionCombo->addItem("What is your favorite book?");
+    ui->securityQuestionCombo->addItem("What city were you born in?");
 
     connect(ui->passwordLineEdit,
             &QLineEdit::returnPressed,
@@ -48,6 +55,8 @@ void RegisterWindow::on_registerButton_clicked()
 {
     const QString username = ui->usernameLineEdit->text().trimmed();
     const QString password = ui->passwordLineEdit->text().trimmed();
+    const QString securityQuestion = ui->securityQuestionCombo->currentText();
+    const QString securityAnswer = ui->securityAnswerLineEdit->text().trimmed();
 
     if (username.isEmpty() || password.isEmpty())
     {
@@ -67,13 +76,19 @@ void RegisterWindow::on_registerButton_clicked()
         return;
     }
 
+    if (securityAnswer.isEmpty())
+    {
+        showStatus("Please answer the security question.", true);
+        return;
+    }
+
     if (User::userExists(username))
     {
         showStatus("That username is already taken.", true);
         return;
     }
 
-    if (User::saveUser(username, password))
+    if (User::saveUser(username, password, securityQuestion, securityAnswer))
     {
         QMessageBox::information(this, "Success", "Registration Successful");
         accept();
