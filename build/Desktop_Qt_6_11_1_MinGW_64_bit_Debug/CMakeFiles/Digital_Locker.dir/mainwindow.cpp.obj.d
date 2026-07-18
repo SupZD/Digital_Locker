@@ -422,7 +422,11 @@ CMakeFiles/Digital_Locker.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QStatusBar \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qstatusbar.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QWidget \
+ C:\Users\ACER\OneDrive\Documents\Digital_Locker\User.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/QString \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMessageBox \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmessagebox.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialog.h \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QLineEdit \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QPushButton

@@ -342,9 +342,21 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/ACER/OneDrive/Documents/Digital_Locker/User.h",
+			"MU",
+			"EWIEGA46WW/moc_User.cpp",
+			null
+		],
+		[
 			"C:/Users/ACER/OneDrive/Documents/Digital_Locker/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"C:/Users/ACER/OneDrive/Documents/Digital_Locker/registerwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_registerwindow.cpp",
 			null
 		]
 	],
@@ -421,12 +433,22 @@
 	"SOURCES" : 
 	[
 		[
+			"C:/Users/ACER/OneDrive/Documents/Digital_Locker/User.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/ACER/OneDrive/Documents/Digital_Locker/main.cpp",
 			"MU",
 			null
 		],
 		[
 			"C:/Users/ACER/OneDrive/Documents/Digital_Locker/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/ACER/OneDrive/Documents/Digital_Locker/registerwindow.cpp",
 			"MU",
 			null
 		]

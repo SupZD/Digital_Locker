@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-e0cb37a5df8baa06e9d6.json",
+					"jsonFile" : "directory-.-Debug-b8be305fcb3b24b9e86b.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,14 +44,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Digital_Locker::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Digital_Locker-Debug-e939a3dd58b3801dd768.json",
+					"jsonFile" : "target-Digital_Locker-Debug-26796afaca8bd9e4f30e.json",
 					"name" : "Digital_Locker",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Digital_Locker_autogen::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Digital_Locker_autogen-Debug-ad7a673bbab7dd0fbc22.json",
+					"jsonFile" : "target-Digital_Locker_autogen-Debug-806a772cec1b3193ddd8.json",
 					"name" : "Digital_Locker_autogen",
 					"projectIndex" : 0
 				},
@@ -68,7 +68,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/ACER/OneDrive/Documents/Digital_Locker/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug",
+		"build" : "C:/Users/ACER/OneDrive/Documents/Digital_Locker/build",
 		"source" : "C:/Users/ACER/OneDrive/Documents/Digital_Locker"
 	},
 	"version" : 

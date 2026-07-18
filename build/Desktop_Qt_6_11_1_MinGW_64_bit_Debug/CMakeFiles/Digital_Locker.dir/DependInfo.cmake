@@ -10,8 +10,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "Digital_Locker_autogen/timestamp" "custom" "Digital_Locker_autogen/deps"
   "C:/Users/ACER/OneDrive/Documents/Digital_Locker/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Digital_Locker_autogen/mocs_compilation.cpp" "CMakeFiles/Digital_Locker.dir/Digital_Locker_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/Digital_Locker.dir/Digital_Locker_autogen/mocs_compilation.cpp.obj.d"
+  "C:/Users/ACER/OneDrive/Documents/Digital_Locker/User.cpp" "CMakeFiles/Digital_Locker.dir/User.cpp.obj" "gcc" "CMakeFiles/Digital_Locker.dir/User.cpp.obj.d"
   "C:/Users/ACER/OneDrive/Documents/Digital_Locker/main.cpp" "CMakeFiles/Digital_Locker.dir/main.cpp.obj" "gcc" "CMakeFiles/Digital_Locker.dir/main.cpp.obj.d"
   "C:/Users/ACER/OneDrive/Documents/Digital_Locker/mainwindow.cpp" "CMakeFiles/Digital_Locker.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/Digital_Locker.dir/mainwindow.cpp.obj.d"
+  "C:/Users/ACER/OneDrive/Documents/Digital_Locker/registerwindow.cpp" "CMakeFiles/Digital_Locker.dir/registerwindow.cpp.obj" "gcc" "CMakeFiles/Digital_Locker.dir/registerwindow.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

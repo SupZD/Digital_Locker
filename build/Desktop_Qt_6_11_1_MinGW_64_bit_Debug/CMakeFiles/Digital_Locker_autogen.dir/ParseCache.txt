@@ -381,3 +381,5 @@ C:/Users/ACER/OneDrive/Documents/Digital_Locker/mainwindow.h
 C:/Users/ACER/OneDrive/Documents/Digital_Locker/main.cpp
 C:/Users/ACER/OneDrive/Documents/Digital_Locker/mainwindow.cpp
  uic:./ui_mainwindow.h
+C:/Users/ACER/OneDrive/Documents/Digital_Locker/User.h
+C:/Users/ACER/OneDrive/Documents/Digital_Locker/User.cpp

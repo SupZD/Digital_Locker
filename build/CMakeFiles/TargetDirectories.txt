@@ -1,0 +1,9 @@
+C:/Users/ACER/OneDrive/Documents/Digital_Locker/build/CMakeFiles/Digital_Locker.dir
+C:/Users/ACER/OneDrive/Documents/Digital_Locker/build/CMakeFiles/edit_cache.dir
+C:/Users/ACER/OneDrive/Documents/Digital_Locker/build/CMakeFiles/rebuild_cache.dir
+C:/Users/ACER/OneDrive/Documents/Digital_Locker/build/CMakeFiles/list_install_components.dir
+C:/Users/ACER/OneDrive/Documents/Digital_Locker/build/CMakeFiles/install.dir
+C:/Users/ACER/OneDrive/Documents/Digital_Locker/build/CMakeFiles/install/local.dir
+C:/Users/ACER/OneDrive/Documents/Digital_Locker/build/CMakeFiles/install/strip.dir
+C:/Users/ACER/OneDrive/Documents/Digital_Locker/build/CMakeFiles/Digital_Locker_autogen_timestamp_deps.dir
+C:/Users/ACER/OneDrive/Documents/Digital_Locker/build/CMakeFiles/Digital_Locker_autogen.dir

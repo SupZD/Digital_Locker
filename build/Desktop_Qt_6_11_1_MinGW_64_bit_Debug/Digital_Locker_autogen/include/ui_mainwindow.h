@@ -30,7 +30,7 @@ public:
     QLabel *label_3;
     QLineEdit *passwordInput;
     QPushButton *loginButton;
-    QPushButton *pushButton;
+    QPushButton *registerButton;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -71,15 +71,18 @@ public:
         loginButton->setObjectName("loginButton");
         loginButton->setGeometry(QRect(20, 230, 101, 29));
         loginButton->setFont(font);
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(150, 230, 161, 29));
+        registerButton = new QPushButton(centralwidget);
+        registerButton->setObjectName("registerButton");
+        registerButton->setGeometry(QRect(150, 230, 161, 29));
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
         MainWindow->setStatusBar(statusbar);
 
         retranslateUi(MainWindow);
+
+        loginButton->setDefault(true);
+
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
@@ -88,10 +91,12 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Digital Locker", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "DIGITAL LOCKER", nullptr));
+        usernameInput->setPlaceholderText(QCoreApplication::translate("MainWindow", "     Enter Username", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "Username:", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Password:", nullptr));
+        passwordInput->setPlaceholderText(QCoreApplication::translate("MainWindow", "     Enter Password", nullptr));
         loginButton->setText(QCoreApplication::translate("MainWindow", "LOGIN", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "REGISTER", nullptr));
+        registerButton->setText(QCoreApplication::translate("MainWindow", "REGISTER", nullptr));
     } // retranslateUi
 
 };

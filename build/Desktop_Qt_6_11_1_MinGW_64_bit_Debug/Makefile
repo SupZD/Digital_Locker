@@ -223,6 +223,30 @@ Digital_Locker_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Digital_Locker.dir\build.make CMakeFiles/Digital_Locker.dir/Digital_Locker_autogen/mocs_compilation.cpp.s
 .PHONY : Digital_Locker_autogen/mocs_compilation.cpp.s
 
+User.obj: User.cpp.obj
+.PHONY : User.obj
+
+# target to build an object file
+User.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Digital_Locker.dir\build.make CMakeFiles/Digital_Locker.dir/User.cpp.obj
+.PHONY : User.cpp.obj
+
+User.i: User.cpp.i
+.PHONY : User.i
+
+# target to preprocess a source file
+User.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Digital_Locker.dir\build.make CMakeFiles/Digital_Locker.dir/User.cpp.i
+.PHONY : User.cpp.i
+
+User.s: User.cpp.s
+.PHONY : User.s
+
+# target to generate assembly for a file
+User.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Digital_Locker.dir\build.make CMakeFiles/Digital_Locker.dir/User.cpp.s
+.PHONY : User.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -271,6 +295,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Digital_Locker.dir\build.make CMakeFiles/Digital_Locker.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+registerwindow.obj: registerwindow.cpp.obj
+.PHONY : registerwindow.obj
+
+# target to build an object file
+registerwindow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Digital_Locker.dir\build.make CMakeFiles/Digital_Locker.dir/registerwindow.cpp.obj
+.PHONY : registerwindow.cpp.obj
+
+registerwindow.i: registerwindow.cpp.i
+.PHONY : registerwindow.i
+
+# target to preprocess a source file
+registerwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Digital_Locker.dir\build.make CMakeFiles/Digital_Locker.dir/registerwindow.cpp.i
+.PHONY : registerwindow.cpp.i
+
+registerwindow.s: registerwindow.cpp.s
+.PHONY : registerwindow.s
+
+# target to generate assembly for a file
+registerwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Digital_Locker.dir\build.make CMakeFiles/Digital_Locker.dir/registerwindow.cpp.s
+.PHONY : registerwindow.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -289,12 +337,18 @@ help:
 	@echo ... Digital_Locker_autogen/mocs_compilation.obj
 	@echo ... Digital_Locker_autogen/mocs_compilation.i
 	@echo ... Digital_Locker_autogen/mocs_compilation.s
+	@echo ... User.obj
+	@echo ... User.i
+	@echo ... User.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... registerwindow.obj
+	@echo ... registerwindow.i
+	@echo ... registerwindow.s
 .PHONY : help
 
 

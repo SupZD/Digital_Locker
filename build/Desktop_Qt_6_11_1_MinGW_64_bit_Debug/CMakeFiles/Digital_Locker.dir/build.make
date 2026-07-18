@@ -120,11 +120,43 @@ CMakeFiles/Digital_Locker.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Digital_Locker.dir/mainwindow.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ACER\OneDrive\Documents\Digital_Locker\mainwindow.cpp -o CMakeFiles\Digital_Locker.dir\mainwindow.cpp.s
 
+CMakeFiles/Digital_Locker.dir/registerwindow.cpp.obj: CMakeFiles/Digital_Locker.dir/flags.make
+CMakeFiles/Digital_Locker.dir/registerwindow.cpp.obj: CMakeFiles/Digital_Locker.dir/includes_CXX.rsp
+CMakeFiles/Digital_Locker.dir/registerwindow.cpp.obj: C:/Users/ACER/OneDrive/Documents/Digital_Locker/registerwindow.cpp
+CMakeFiles/Digital_Locker.dir/registerwindow.cpp.obj: CMakeFiles/Digital_Locker.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ACER\OneDrive\Documents\Digital_Locker\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Digital_Locker.dir/registerwindow.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Digital_Locker.dir/registerwindow.cpp.obj -MF CMakeFiles\Digital_Locker.dir\registerwindow.cpp.obj.d -o CMakeFiles\Digital_Locker.dir\registerwindow.cpp.obj -c C:\Users\ACER\OneDrive\Documents\Digital_Locker\registerwindow.cpp
+
+CMakeFiles/Digital_Locker.dir/registerwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Digital_Locker.dir/registerwindow.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ACER\OneDrive\Documents\Digital_Locker\registerwindow.cpp > CMakeFiles\Digital_Locker.dir\registerwindow.cpp.i
+
+CMakeFiles/Digital_Locker.dir/registerwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Digital_Locker.dir/registerwindow.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ACER\OneDrive\Documents\Digital_Locker\registerwindow.cpp -o CMakeFiles\Digital_Locker.dir\registerwindow.cpp.s
+
+CMakeFiles/Digital_Locker.dir/User.cpp.obj: CMakeFiles/Digital_Locker.dir/flags.make
+CMakeFiles/Digital_Locker.dir/User.cpp.obj: CMakeFiles/Digital_Locker.dir/includes_CXX.rsp
+CMakeFiles/Digital_Locker.dir/User.cpp.obj: C:/Users/ACER/OneDrive/Documents/Digital_Locker/User.cpp
+CMakeFiles/Digital_Locker.dir/User.cpp.obj: CMakeFiles/Digital_Locker.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ACER\OneDrive\Documents\Digital_Locker\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Digital_Locker.dir/User.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Digital_Locker.dir/User.cpp.obj -MF CMakeFiles\Digital_Locker.dir\User.cpp.obj.d -o CMakeFiles\Digital_Locker.dir\User.cpp.obj -c C:\Users\ACER\OneDrive\Documents\Digital_Locker\User.cpp
+
+CMakeFiles/Digital_Locker.dir/User.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Digital_Locker.dir/User.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ACER\OneDrive\Documents\Digital_Locker\User.cpp > CMakeFiles\Digital_Locker.dir\User.cpp.i
+
+CMakeFiles/Digital_Locker.dir/User.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Digital_Locker.dir/User.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ACER\OneDrive\Documents\Digital_Locker\User.cpp -o CMakeFiles\Digital_Locker.dir\User.cpp.s
+
 # Object files for target Digital_Locker
 Digital_Locker_OBJECTS = \
 "CMakeFiles/Digital_Locker.dir/Digital_Locker_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/Digital_Locker.dir/main.cpp.obj" \
-"CMakeFiles/Digital_Locker.dir/mainwindow.cpp.obj"
+"CMakeFiles/Digital_Locker.dir/mainwindow.cpp.obj" \
+"CMakeFiles/Digital_Locker.dir/registerwindow.cpp.obj" \
+"CMakeFiles/Digital_Locker.dir/User.cpp.obj"
 
 # External object files for target Digital_Locker
 Digital_Locker_EXTERNAL_OBJECTS =
@@ -132,6 +164,8 @@ Digital_Locker_EXTERNAL_OBJECTS =
 Digital_Locker.exe: CMakeFiles/Digital_Locker.dir/Digital_Locker_autogen/mocs_compilation.cpp.obj
 Digital_Locker.exe: CMakeFiles/Digital_Locker.dir/main.cpp.obj
 Digital_Locker.exe: CMakeFiles/Digital_Locker.dir/mainwindow.cpp.obj
+Digital_Locker.exe: CMakeFiles/Digital_Locker.dir/registerwindow.cpp.obj
+Digital_Locker.exe: CMakeFiles/Digital_Locker.dir/User.cpp.obj
 Digital_Locker.exe: CMakeFiles/Digital_Locker.dir/build.make
 Digital_Locker.exe: C:/Qt/6.11.1/mingw_64/lib/libQt6Widgets.a
 Digital_Locker.exe: C:/Qt/6.11.1/mingw_64/lib/libQt6Gui.a
@@ -141,7 +175,7 @@ Digital_Locker.exe: Digital_Locker.exe.manifest
 Digital_Locker.exe: CMakeFiles/Digital_Locker.dir/linkLibs.rsp
 Digital_Locker.exe: CMakeFiles/Digital_Locker.dir/objects1.rsp
 Digital_Locker.exe: CMakeFiles/Digital_Locker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ACER\OneDrive\Documents\Digital_Locker\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Digital_Locker.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ACER\OneDrive\Documents\Digital_Locker\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Digital_Locker.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Digital_Locker.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
