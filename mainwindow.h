@@ -21,6 +21,8 @@ private slots:
     void on_loginButton_clicked();
     void on_registerButton_clicked();
     void on_showPasswordCheck_toggled(bool checked);
+    void on_forgotPasswordButton_clicked();
+    void on_changePasswordButton_clicked();
 
 private:
     void showStatus(const QString &message, bool isError);

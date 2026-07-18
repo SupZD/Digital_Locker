@@ -1,6 +1,9 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "User.h"
+#include "registerwindow.h"
+#include "forgotpasswordwindow.h"
+#include "changepasswordwindow.h"
 
 #include <QMessageBox>
 #include <QLineEdit>
@@ -19,6 +22,7 @@ MainWindow::MainWindow(QWidget *parent)
             &QLineEdit::returnPressed,
             ui->loginButton,
             &QPushButton::click);
+
     // Enter key in the username field jumps to the password field
     connect(ui->usernameInput,
             &QLineEdit::returnPressed,
@@ -91,47 +95,32 @@ void MainWindow::on_loginButton_clicked()
 
 void MainWindow::on_registerButton_clicked()
 {
-    const QString username = ui->usernameInput->text().trimmed();
-    const QString password = ui->passwordInput->text().trimmed();
+    // Registration now happens in its own dialog rather than reusing
+    // the login form's fields.
+    RegisterWindow registerWindow(this);
 
-    if (username.isEmpty() || password.isEmpty())
+    if (registerWindow.exec() == QDialog::Accepted)
     {
-        showStatus("Please fill all fields.", true);
-        return;
+        showStatus("Account created. You can log in now.", false);
     }
+}
 
-    if (username.length() < 3)
+void MainWindow::on_forgotPasswordButton_clicked()
+{
+    ForgotPasswordWindow forgotPasswordWindow(this);
+
+    if (forgotPasswordWindow.exec() == QDialog::Accepted)
     {
-        showStatus("Username must be at least 3 characters.", true);
-        return;
+        showStatus("Password reset. You can log in now.", false);
     }
+}
 
-    if (password.length() < 6)
+void MainWindow::on_changePasswordButton_clicked()
+{
+    ChangePasswordWindow changePasswordWindow(this);
+
+    if (changePasswordWindow.exec() == QDialog::Accepted)
     {
-        showStatus("Password must be at least 6 characters.", true);
-        return;
+        showStatus("Password changed. You can log in now.", false);
     }
-
-    if (User::userExists(username))
-    {
-        showStatus("That username is already taken.", true);
-        return;
-    }
-
-    const bool saved = User::saveUser(username, password);
-
-    if (saved)
-    {
-        showStatus("Account registered. You can log in now.", false);
-        QMessageBox::information(this, "Success", "Account Registered!");
-    }
-    else
-    {
-        showStatus("Could not save account. Please try again.", true);
-        QMessageBox::warning(this, "Error", "Could not save account.");
-    }
-
-    ui->usernameInput->clear();
-    ui->passwordInput->clear();
-    ui->usernameInput->setFocus();
 }
