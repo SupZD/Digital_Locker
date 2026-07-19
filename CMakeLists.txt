@@ -24,18 +24,22 @@ set(PROJECT_SOURCES
        User.h
        changepasswordwindow.cpp
        changepasswordwindow.h
+       changepasswordwindow.ui
        forgotpasswordwindow.h
        forgotpasswordwindow.cpp
+       forgotpasswordwindow.ui
+       lockerwindow.cpp
+       lockerwindow.h
+       lockerwindow.ui
+       profilewindow.cpp
+       profilewindow.h
+       profilewindow.ui
+       resources.qrc
 )
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Digital_Locker
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        changepasswordwindow.cpp
-        changepasswordwindow.h
-forgotpasswordwindow.cpp
-changepasswordwindow.h changepasswordwindow.cpp changepasswordwindow.ui
-forgotpasswordwindow.h forgotpasswordwindow.cpp forgotpasswordwindow.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Digital_Locker APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

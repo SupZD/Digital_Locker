@@ -4,6 +4,7 @@
 #include "registerwindow.h"
 #include "forgotpasswordwindow.h"
 #include "changepasswordwindow.h"
+#include "lockerwindow.h"
 
 #include <QMessageBox>
 #include <QLineEdit>
@@ -86,11 +87,15 @@ void MainWindow::on_loginButton_clicked()
     }
 
     showStatus("Login successful. Welcome, " + username + "!", false);
-    QMessageBox::information(this, "Success", "Login Successful!");
+
+    LockerWindow *locker = new LockerWindow(username);
+    locker->setAttribute(Qt::WA_DeleteOnClose);
+    connect(locker, &QObject::destroyed, this, &MainWindow::show);
+    locker->show();
 
     ui->usernameInput->clear();
     ui->passwordInput->clear();
-    ui->usernameInput->setFocus();
+    this->hide();
 }
 
 void MainWindow::on_registerButton_clicked()

@@ -192,3 +192,79 @@ bool User::resetPassword(const QString &username, const QString &newPassword)
 
     return updatePasswordHash(username, hashPassword(newPassword));
 }
+
+UserProfile User::getProfile(const QString &username)
+{
+    UserProfile profile;
+    profile.username = username;
+
+    QFile file(usersFilePath());
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+        return profile;
+
+    QTextStream in(&file);
+    while (!in.atEnd())
+    {
+        const QStringList parts = in.readLine().split('|');
+        if (!parts.isEmpty() && parts.at(0) == username)
+        {
+            if (parts.size() >= 3)
+                profile.securityQuestion = parts.at(2);
+            if (parts.size() >= 5)
+                profile.displayName = parts.at(4);
+            if (parts.size() >= 6)
+                profile.email = parts.at(5);
+            if (parts.size() >= 7)
+                profile.avatarPath = parts.at(6);
+            break;
+        }
+    }
+    file.close();
+    return profile;
+}
+
+bool User::updateProfile(const QString &username, const QString &displayName,
+                         const QString &email, const QString &avatarPath)
+{
+    QFile file(usersFilePath());
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+        return false;
+
+    QStringList updatedLines;
+    bool found = false;
+
+    QTextStream in(&file);
+    while (!in.atEnd())
+    {
+        QString line = in.readLine();
+        QStringList parts = line.split('|');
+        if (!parts.isEmpty() && parts.at(0) == username)
+        {
+            while (parts.size() < 7)
+                parts.append(QString());
+
+            parts[4] = displayName;
+            parts[5] = email;
+            parts[6] = avatarPath;
+
+            line = parts.join('|');
+            found = true;
+        }
+        updatedLines << line;
+    }
+    file.close();
+
+    if (!found)
+        return false;
+
+    QFile outFile(usersFilePath());
+    if (!outFile.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Truncate))
+        return false;
+
+    QTextStream out(&outFile);
+    for (const QString &l : updatedLines)
+        out << l << "\n";
+    outFile.close();
+
+    return true;
+}

@@ -3,6 +3,16 @@
 
 #include <QString>
 
+// Extra, non-authentication info shown on a user's profile screen.
+struct UserProfile
+{
+    QString username;
+    QString securityQuestion;
+    QString displayName;
+    QString email;
+    QString avatarPath;
+};
+
 class User
 {
 public:
@@ -32,6 +42,16 @@ public:
     // Sets a new password directly. Intended to be called only after the
     // caller has already verified the user's security answer.
     static bool resetPassword(const QString &username, const QString &newPassword);
+
+    // Returns the editable profile info (display name, email, avatar path)
+    // for a username, along with their security question. Fields are empty
+    // if not yet set.
+    static UserProfile getProfile(const QString &username);
+
+    // Updates the editable profile fields for an existing user. Returns
+    // false if the username doesn't exist.
+    static bool updateProfile(const QString &username, const QString &displayName,
+                              const QString &email, const QString &avatarPath);
 
 private:
     static QString hashPassword(const QString &password);
